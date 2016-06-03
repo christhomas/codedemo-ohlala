@@ -1,0 +1,18 @@
+{
+  "compileOnSave": false,
+  "filesGlob": [
+    "./typings/**/*.*.ts",
+    "./node_modules/**/dist/*.d.ts",
+    "./src/**/*.{ts,tsx}",
+    "./test/**/*.ts"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

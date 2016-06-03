@@ -1,0 +1,51 @@
+{
+  "name": "test-ohlala-react",
+  "version": "1.0.0",
+  "description": "Test project for ohlala in react",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4",
+    "moment": "^2.13.0",
+    "react-bootstrap": "^0.29.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "copy-webpack-plugin": "^3.0.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.17.0",
+    "html-webpack-template": "^5.0.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^0.8.1",
+    "react": "^15.1.0",
+    "react-bootstrap": "^0.29.4",
+    "react-bootstrap-typescript": "^0.0.4",
+    "react-dom": "^15.1.0",
+    "react-fa": "^4.1.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.7",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "debug": "webpack-dev-server --config webpack.config.js --host 0.0.0.0 --port 8080 --colors --dev --hot --inline --history-api-fallback",
+    "build": "rm -rf dist/** && webpack --config webpack.config.js --devtool source-map",
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christhomas/test-ohlala.git"
+  },
+  "author": "Christopher Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christhomas/test-ohlala/issues"
+  },
+  "homepage": "https://github.com/christhomas/test-ohlala#readme",
+  "private": true
+}

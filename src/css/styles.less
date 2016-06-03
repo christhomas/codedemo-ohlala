@@ -1,0 +1,204 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+}
+
+.main {
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  width: auto;
+  background-image: url("../image/background.png");
+  text-align: center;
+
+  h1, h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  h2 {
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .cursive {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: .13em;
+  }
+
+  .countdown {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+
+    .countdown-label {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    .countdown-number {
+      font-size: 124px;
+      line-height: 1;
+      font-weight: 200;
+    }
+  }
+
+  .is-complete .countdown-number {
+    -webkit-animation: rainbow 1s infinite;
+    -ms-animation: rainbow 1s infinite;
+    -o-animation: rainbow 1s infinite;
+    animation: rainbow 1s infinite;
+  }
+
+  .seconds {
+    margin-bottom: 5rem;
+
+    .form-group {
+      display: inline-block;
+    }
+  }
+
+  input {
+    display: inline-block;
+    width: 20rem;
+    border: solid 1px #fff;
+    margin-right: 0.5rem;
+  }
+
+  .has-success input {
+    background-color: #EBFFEC;
+  }
+
+  .has-error input {
+    background-color: #FFD4D3;
+  }
+
+  .btn {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    padding: 20px;
+
+    .cursive {
+      font-size: 40px;
+    }
+
+    .countdown-number {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main .cursive {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    margin-top: 100px;
+  }
+}
+
+@-webkit-keyframes rainbow {
+  0% {    color: #ff0000; }
+  10% {   color: #ff8000; }
+  20% {   color: #ffff00; }
+  30% {   color: #80ff00; }
+  40% {   color: #00ff00; }
+  50% {   color: #00ff80; }
+  60% {   color: #00ffff; }
+  70% {   color: #0080ff; }
+  80% {   color: #0000ff; }
+  90% {   color: #8000ff; }
+  100% {  color: #ff0080; }
+}
+
+@-ms-keyframes rainbow {
+  0% {    color: #ff0000;}
+  10% {   color: #ff8000; }
+  20% {   color: #ffff00; }
+  30% {   color: #80ff00; }
+  40% {   color: #00ff00; }
+  50% {   color: #00ff80; }
+  60% {   color: #00ffff; }
+  70% {   color: #0080ff; }
+  80% {   color: #0000ff; }
+  90% {   color: #8000ff; }
+  100% {  color: #ff0080; }
+}
+
+@-o-keyframes rainbow {
+  0% {    color: #ff0000; }
+  10% {   color: #ff8000; }
+  20% {   color: #ffff00; }
+  30% {   color: #80ff00; }
+  40% {   color: #00ff00; }
+  50% {   color: #00ff80; }
+  60% {   color: #00ffff; }
+  70% {   color: #0080ff; }
+  80% {   color: #0000ff; }
+  90% {   color: #8000ff; }
+  100% {  color: #ff0080; }
+}
+
+@keyframes rainbow {
+  0% {    color: #ff0000; }
+  10% {   color: #ff8000; }
+  20% {   color: #ffff00; }
+  30% {   color: #80ff00; }
+  40% {   color: #00ff00; }
+  50% {   color: #00ff80; }
+  60% {   color: #00ffff; }
+  70% {   color: #0080ff; }
+  80% {   color: #0000ff; }
+  90% {   color: #8000ff; }
+  100% {  color: #ff0080; }
+}
